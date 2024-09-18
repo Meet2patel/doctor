@@ -47,6 +47,31 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+      @media screen and (max-width: 768px) {
+        .Feautes.section .container .row {
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          }
+        .Feautes.section .container .col-lg-4 {
+          max-width: 100%;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .Feautes.section .container .row {
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          }
+        .Feautes.section .container .col-lg-4 {
+          max-width: 100%;
+        }
+        .Feautes .single-features{
+          padding: 10px;
+        }
+      }
+
+    </style>
   </head>
   <body>
     <!-- Preloader -->
@@ -497,14 +522,10 @@
     <!-- =========================footer=================== -->
 
     <footer class="testFooter">
-
-		<div class="test1" style="background-color: red; color: white;">
-			Footer
-			Footer
-			Footer
-		</div>
-
-	</footer>
+      <div class="test1" style="background-color: red; color: white">
+        Footer Footer Footer
+      </div>
+    </footer>
 
     <!-- =========================footer=================== -->
 
@@ -576,6 +597,5 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
-    
   </body>
 </html>

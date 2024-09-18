@@ -846,7 +846,7 @@ body {
 }
 
 .Feautes.section .container .col-lg-4 {
-  max-width: 25% !important;
+  max-width: 25%;
 }
 /* .Feautes .single-features::before {
   position: absolute;
