@@ -1,90 +1,122 @@
-<section class="appointment">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 col-12">
-          <form class="form" action="#">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-group">
-                  <input name="name" type="text" placeholder="Name" />
-                </div>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #4cae4c;
+  }
+  </style>
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Appointment Form</title>
+  </head>
+  <body>
+      <div class="container">
+          <h2>Appointment Form</h2>
+          <form action="#" method="post">
+              <div class="form-group">
+                  <label for="first-name">First Name:</label>
+                  <input type="text" id="first-name" name="first-name" required>
               </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-group">
-                  <input name="email" type="email" placeholder="Email" />
-                </div>
+              <div class="form-group">
+                  <label for="last-name">Last Name:</label>
+                  <input type="text" id="last-name" name="last-name" required>
               </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-group">
-                  <input name="phone" type="text" placeholder="Phone" />
-                </div>
+              <div class="form-group">
+                  <label for="contact">Contact Number:</label>
+                  <input type="tel" id="contact" name="contact" required>
               </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-group">
-                  <div class="nice-select form-control wide" tabindex="0">
-                    <span class="current">Department</span>
-                    <ul class="list">
-                      <li data-value="1" class="option selected">
-                        Department
-                      </li>
-                      <li data-value="2" class="option">Cardiac Clinic</li>
-                      <li data-value="3" class="option">Neurology</li>
-                      <li data-value="4" class="option">Dentistry</li>
-                      <li data-value="5" class="option">Gastroenterology</li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="form-group">
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required>
               </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-group">
-                  <div class="nice-select form-control wide" tabindex="0">
-                    <span class="current">Doctor</span>
-                    <ul class="list">
-                      <li data-value="1" class="option selected">Doctor</li>
-                      <li data-value="2" class="option">
-                        Dr. Akther Hossain
-                      </li>
-                      <li data-value="3" class="option">Dr. Dery Alex</li>
-                      <li data-value="4" class="option">Dr. Jovis Karon</li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="form-group">
+                  <label for="address">Address:</label>
+                  <textarea id="address" name="address" rows="4" required></textarea>
               </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-group">
-                  <input type="text" placeholder="Date" id="datepicker" />
+              <div class="form-group types" style="display: flex;">
+                <label for="appointment-type">Appointment Type:</label>
+                <div class="custom-select" style="margin-left: 8px;">
+                    <select id="appointment-type" name="appointment-type" required>
+                        <option value="">Select an option</option>
+                        <option value="consultation">Consultation</option>
+                        <option value="follow-up">Follow-up</option>
+                        <option value="checkup">Checkup</option>
+                        <option value="emergency">Emergency</option>
+                    </select>
                 </div>
-              </div>
-              <div class="col-lg-12 col-md-12 col-12">
-                <div class="form-group">
-                  <textarea
-                    name="message"
-                    placeholder="Write Your Message Here....."
-                  ></textarea>
-                </div>
-              </div>
             </div>
-            <div class="row">
-              <div class="col-lg-5 col-md-4 col-12">
-                <div class="form-group">
-                  <div class="button">
-                    <button type="submit" class="btn">
-                      Book An Appointment
-                    </button>
-                  </div>
+            <div class="form-group" style="display: flex;">
+                <label for="doctor-name">Doctor's Name:</label>
+                <div class="custom-select" style="margin-left: 32px;">
+                    <select id="doctor-name" name="doctor-name" required>
+                        <option value="">Select a doctor</option>
+                        <option value="dr-smith">Dr. Smith</option>
+                        <option value="dr-jones">Dr. Jones</option>
+                        <option value="dr-brown">Dr. Brown</option>
+                        <option value="dr-williams">Dr. Williams</option>
+                    </select>
                 </div>
-              </div>
-              <div class="col-lg-7 col-md-8 col-12">
-                <p>( We will be confirm by an Text Message )</p>
-              </div>
             </div>
+              <button type="submit" class="submit-btn">Submit</button>
           </form>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="appointment-image">
-            <img src="img/contact-img.png" alt="#" />
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+  </body>
+  </html>
