@@ -41,13 +41,19 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  background-color: #00BAF0;
-  background: #fff;
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  justify-content: space-around;
+  background-color: #fff;
   color: #000;
   height: 50px;
   padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.top-nav.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .menu {
@@ -113,10 +119,20 @@ html, body {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .menu-button-container {
     display: flex;
   }
+
+  .top-nav{
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .top-nav .menu-button-container{
+    margin-bottom: 0px;
+  }
+
   .menu {
     position: absolute;
     top: 0;
@@ -159,6 +175,14 @@ html, body {
   }
 }
 
+
+@media (min-width: 1300px){
+  .container{
+    margin-top: 6% !important;
+  }
+} 
+
+
 /* nav ends */
 
 /* nav ends */
@@ -174,6 +198,7 @@ html, body {
   .container {
     max-width: 400px;
     margin: auto;
+    margin-top: 8%;
     padding: 20px;
     background: white;
     border-radius: 8px;
@@ -409,6 +434,20 @@ html, body {
 });
 
   </script>
+
+
+<script>
+  window.addEventListener('scroll', function() {
+    const topNav = document.querySelector('.top-nav');
+    
+    if (window.scrollY > 0) {
+      topNav.classList.add('shadow');
+    } else {
+      topNav.classList.remove('shadow');
+    }
+  });
+</script>
+
 
 
     </body>
