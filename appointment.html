@@ -34,7 +34,7 @@ html, body {
 }
 
 * {
-  font-family: "Raleway";
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -121,6 +121,11 @@ html, body {
 }
 
 @media (max-width: 767px) {
+
+  .container{
+    margin-top: 16% !important;
+  }
+
   .menu-button-container {
     display: flex;
   }
@@ -176,6 +181,11 @@ html, body {
   }
 }
 
+@media (min-width: 768px) and (max-width:1299px){
+  .container{
+    margin-top: 13% !important;
+  }
+}
 
 @media (min-width: 1300px){
   .container{
@@ -199,7 +209,7 @@ html, body {
   .container {
     max-width: 400px;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 10%;
     padding: 20px;
     background: white;
     border-radius: 8px;
@@ -355,7 +365,7 @@ html, body {
         <img class="brandlogo" src="./img/BPharm_logo.png" alt="Logo" />
       </div>
       <div class="second">
-        <li><a class="menuhome" href="/">Home</a></li>
+        <li><a class="menuhome" href="./index.html">Home</a></li>
       </div>
       <!-- <input id="menu-toggle" type="checkbox" />
       <label class="menu-button-container" for="menu-toggle">
@@ -368,7 +378,7 @@ html, body {
 
     
       <div class="container">
-          <h2>Appointment Form</h2>
+          <h2 style="color: #1a76d1;">Appointment Form</h2>
           <form action="#" method="post">
               <div class="form-group">
                   <label for="first-name">First Name:</label>
