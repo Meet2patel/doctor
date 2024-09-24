@@ -7,11 +7,20 @@
     <title>Insurance</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       /* nav start */
 
-      @import url(https://fonts.googleapis.com/css?family=Raleway);
+      /* @import url(https://fonts.googleapis.com/css?family=Raleway); */
 
       .top-nav ul.menu li {
         transition: color 0.3s ease; /* Smooth transition */
@@ -39,7 +48,7 @@
       }
 
       * {
-        font-family: "Raleway";
+        font-family: "Poppins", sans-serif;
         box-sizing: border-box;
       }
 
@@ -135,12 +144,16 @@
       }
 
       @media (max-width: 767px) {
+        /* .top-nav .second li a {
+          font-size: 14px !important;
+        } */
+
         .menu-button-container {
           display: flex;
         }
 
         .insurance-forms {
-          margin-top: 20% !important;
+          margin-top: 26% !important;
           padding-left: 15px;
           padding-right: 15px;
           padding-bottom: 25px;
@@ -199,16 +212,48 @@
         .menu > li:not(:last-child) {
           border-bottom: 1px solid #444;
         }
+
+        .insurance-forms h2 {
+        font-size: 28px !important;
+        }
+        .insurance-forms p{
+          font-size: 14px !important;
+        }
+        .insurance-list span{
+          font-size: 14px !important;
+
+        }
+
       }
 
-      @media (min-width: 768px) and (max-width: 1000px) {
+      @media (min-width: 768px) and (max-width: 800px) {
         .insurance-forms {
           padding-left: 25px;
           padding-right: 25px;
           padding-bottom: 25px;
         }
         .insurance-forms {
-          margin-top: 8% !important;
+          margin-top: 13% !important;
+        }
+        .insurance-forms h2 {
+        font-size: 32px !important;
+        }
+        .insurance-forms p{
+          font-size: 14px !important;
+        }
+        .insurance-list span{
+          font-size: 14px !important;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 1300px) {
+        .insurance-forms {
+          padding-left: 25px;
+          padding-right: 25px;
+          padding-bottom: 25px;
+        }
+        .insurance-forms {
+          margin-top: 10% !important;
         }
       }
 
@@ -221,12 +266,18 @@
       }
 
       .insurance-forms h2 {
-        font-size: 24px;
         font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        color: #1a76d1;
       }
 
       .insurance-forms p {
         margin-bottom: 20px;
+        font-size: 16px;
+
       }
 
       .insurance-list {
@@ -262,139 +313,136 @@
       .brandlogo {
         width: 150px;
       }
-      .top-nav .menu li a:hover{
+      .top-nav .second li {
+        list-style-type: none;
+      }
+
+      .top-nav .second li a:hover {
         color: #1a76d1;
       }
-      .top-nav .menu li a {
+      .top-nav .second li a {
         text-decoration: none;
         color: #2c2d3f;
-        font-size: 14px;
+        font-size: 17px;
         font-weight: 500;
         text-transform: capitalize;
         padding: 25px 12px;
         position: relative;
         display: inline-block;
+        font-family: "Poppins", sans-serif;
       }
     </style>
   </head>
 
   <body>
+    <section class="top-nav">
+      <div>
+        <img class="brandlogo" src="./img/BPharm_logo.png" alt="Logo" />
+      </div>
+      <div class="second">
+        <li><a class="menuhome" href="/">Home</a></li>
+      </div>
+      <!-- <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a class="menuhome" href="/">Home</a></li>
+      </ul> -->
+    </section>
 
-  
-  <section class="top-nav">
-    <div>
-      <img class="brandlogo" src="./img/BPharm_logo.png" alt="Logo" />
+    <div class="insurance-forms">
+      <h2>INSURANCE FORMS</h2>
+      <p>
+        Please find the correct insurance form for your coverage from the list
+        below.
+      </p>
+      <ul class="insurance-list">
+        <li>
+          <span>ALBERTA BLUE CROSS</span>
+          <a
+            href="./insurances/AB_Blue_Cross_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>CANADA LIFE</span>
+          <a
+            href="./insurances/Canada_Life_Insurance_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>CLAIM SECURE</span>
+          <a
+            href="./insurances/Claimsecure_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>GREAT WEST LIFE</span>
+          <a
+            href="./insurances/Great_West_Life_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>GREEN SHIELD</span>
+          <a
+            href="./insurances/Green_Shield_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>NEXGEN RX</span>
+          <a
+            href="./insurances/Nexegen_Rx_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>JOHNSON INC.</span>
+          <a
+            href="./insurances/RTO_Group_Benefits_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>MANULIFE</span>
+          <a
+            href="./insurances/affinity-markets-extended-health-care-claim-form-cm5000e.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+      </ul>
     </div>
-    <input id="menu-toggle" type="checkbox" />
-    <label class="menu-button-container" for="menu-toggle">
-      <div class="menu-button"></div>
-    </label>
-    <ul class="menu">
-      <li><a class="menuhome" href="/">Home</a></li>
-    </ul>
-  </section>
 
-  <div class="insurance-forms">
-    <h2
-      style="
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 32px;
-      "
-    >
-      INSURANCE FORMS
-    </h2>
-    <p>
-      Please find the correct insurance form for your coverage from the list
-      below.
-    </p>
-    <ul class="insurance-list">
-      <li>
-        <span>ALBERTA BLUE CROSS</span>
-        <a
-          href="./insurances/AB_Blue_Cross_Form.pdf"
-          download
-          class="download-btn"
-          >DOWNLOAD</a
-        >
-      </li>
-      <li>
-        <span>CANADA LIFE</span>
-        <a
-          href="./insurances/Canada_Life_Insurance_Form.pdf"
-          download
-          class="download-btn"
-          >DOWNLOAD</a
-        >
-      </li>
-      <li>
-        <span>CLAIM SECURE</span>
-        <a
-          href="./insurances/Claimsecure_Form.pdf"
-          download
-          class="download-btn"
-          >DOWNLOAD</a
-        >
-      </li>
-      <li>
-        <span>GREAT WEST LIFE</span>
-        <a
-          href="./insurances/Great_West_Life_Form.pdf"
-          download
-          class="download-btn"
-          >DOWNLOAD</a
-        >
-      </li>
-      <li>
-        <span>GREEN SHIELD</span>
-        <a
-          href="./insurances/Green_Shield_Form.pdf"
-          download
-          class="download-btn"
-          >DOWNLOAD</a
-        >
-      </li>
-      <li>
-        <span>NEXGEN RX</span>
-        <a href="./insurances/Nexegen_Rx_Form.pdf" download class="download-btn"
-          >DOWNLOAD</a
-        >
-      </li>
-      <li>
-        <span>JOHNSON INC.</span>
-        <a
-          href="./insurances/RTO_Group_Benefits_Form.pdf"
-          download
-          class="download-btn"
-          >DOWNLOAD</a
-        >
-      </li>
-      <li>
-        <span>MANULIFE</span>
-        <a
-          href="./insurances/affinity-markets-extended-health-care-claim-form-cm5000e.pdf"
-          download
-          class="download-btn"
-          >DOWNLOAD</a
-        >
-      </li>
-    </ul>
-  </div>
+    <script>
+      window.addEventListener("scroll", function () {
+        const topNav = document.querySelector(".top-nav");
 
- 
-
-  <script>
-    window.addEventListener("scroll", function () {
-      const topNav = document.querySelector(".top-nav");
-
-      if (window.scrollY > 0) {
-        topNav.classList.add("shadow");
-      } else {
-        topNav.classList.remove("shadow");
-      }
-    });
-  </script>
-
-</body>
+        if (window.scrollY > 0) {
+          topNav.classList.add("shadow");
+        } else {
+          topNav.classList.remove("shadow");
+        }
+      });
+    </script>
+  </body>
 </html>
