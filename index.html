@@ -61,6 +61,18 @@
     <link rel="stylesheet" href="css/responsive.css" />
 
     <style>
+
+      .choose-right .slider img{
+        border: 0px solid #1A76D1;
+        border-radius: 6px;
+      }
+
+      .choose-right .slider{
+        border: 2px solid #1A76D1;
+        border-radius: 6px;
+      }
+
+
       html {
         scroll-behavior: smooth;
       }
@@ -79,6 +91,15 @@
 
       .testimonials-carousel .owl-stage-outer .owl-stage {
         margin-bottom: 10px;
+      }
+
+      .aboutusimages{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+      .why-choose .choose-left p{
+        margin-bottom: 0px !important;
       }
 
       @media screen and (max-width: 768px) {
@@ -464,42 +485,16 @@
                 health and wellness, Beiseker Pharmacy is here to provide
                 comprehensive support for all your healthcare needs.
               </p>
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul class="list">
-                    <li>
-                      <i class="fa fa-caret-right"></i>Maecenas vitae luctus
-                      nibh.
-                    </li>
-                    <li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-                    <li>
-                      <i class="fa fa-caret-right"></i>Aliquam feugiat interdum.
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul class="list">
-                    <li>
-                      <i class="fa fa-caret-right"></i>Maecenas vitae luctus
-                      nibh.
-                    </li>
-                    <li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-                    <li>
-                      <i class="fa fa-caret-right"></i>Aliquam feugiat interdum.
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
             <!-- End Choose Left -->
           </div>
-          <div class="col-lg-6 col-12">
+          <div class="col-lg-6 col-12 aboutusimages">
             <!-- Start Choose Rights -->
             <div class="choose-right">
               <div class="slider">
-                  <div><img class="gandoImage" src="./img/blog-sidebar1.jpg" alt="Image 1"></div>
-                  <div><img class="gandoImage" src="./img/blog-sidebar2.jpg" alt="Image 2"></div>
-                  <div><img class="gandoImage" src="./img/blog-sidebar3.jpg" alt="Image 3"></div>
+                  <div><img class="gandoImage" src="./img/img1.jpg" alt="Image 1"></div>
+                  <div><img class="gandoImage" src="./img/img1.jpg" alt="Image 1"></div>
+                  <div><img class="gandoImage" src="./img/img1.jpg" alt="Image 1"></div>
                   <!-- Add more images as needed -->
               </div>
           </div>
@@ -602,7 +597,7 @@
         $('.choose-right .slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
+            // autoplay: true,
             autoplaySpeed: 2000, // Adjust autoplay speed as needed
             dots: false, // Optional: Add dots navigation
             responsive: [
