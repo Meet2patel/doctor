@@ -312,6 +312,31 @@ html, body {
   .select-hide {
       display: none;
   }
+  .brandlogo{
+    width: 150px;
+  }
+  .top-nav{
+    height: 74px;
+    border-bottom: 1px solid #1a76d1;
+  }
+  .top-nav .second li {
+        list-style-type: none;
+      }
+
+      .top-nav .second li a:hover {
+        color: #1a76d1;
+      }
+      .top-nav .second li a {
+        text-decoration: none;
+        color: #2c2d3f;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 25px 12px;
+        position: relative;
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+      }
   </style>
   
   <!DOCTYPE html>
@@ -325,22 +350,21 @@ html, body {
   <body>
 
 
-<section class="top-nav">
-  <div>
-    Logo Here
-  </div>
-  <input id="menu-toggle" type="checkbox" />
-  <label class='menu-button-container' for="menu-toggle">
-    <div class='menu-button'></div>
-  </label>
-  <ul class="menu">
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-    <li>Four</li>
-    <li>Five</li>
-  </ul>
-</section>
+    <section class="top-nav">
+      <div>
+        <img class="brandlogo" src="./img/BPharm_logo.png" alt="Logo" />
+      </div>
+      <div class="second">
+        <li><a class="menuhome" href="/">Home</a></li>
+      </div>
+      <!-- <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a class="menuhome" href="/">Home</a></li>
+      </ul> -->
+    </section>
 
     
       <div class="container">
