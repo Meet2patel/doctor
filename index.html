@@ -65,6 +65,10 @@
         scroll-behavior: smooth;
       }
 
+      .choose-right .slider .gandoImage{
+          width: 100vw !important;
+      }
+
       .testimonials-carousel .owl-stage-outer .owl-stage {
         margin-bottom: 10px;
       }
@@ -482,8 +486,14 @@
           <div class="col-lg-6 col-12">
             <!-- Start Choose Rights -->
             <div class="choose-right">
-              <!-- TODO Add slider HERE -->
-            </div>
+              <div class="slider">
+                  <div><img class="gandoImage" src="./img/blog-sidebar1.jpg" alt="Image 1"></div>
+                  <div><img class="gandoImage" src="./img/blog-sidebar2.jpg" alt="Image 2"></div>
+                  <div><img class="gandoImage" src="./img/blog-sidebar3.jpg" alt="Image 3"></div>
+                  <!-- Add more images as needed -->
+              </div>
+          </div>
+          
             <!-- End Choose Rights -->
           </div>
         </div>
@@ -500,25 +510,7 @@
 
     <!--END OF CAROSEL-->
 
-    <!-- <div class="maindivo" style="display: flex;">
-      <div class="divo" style="border: 1px solid black; display: flex; flex-direction: column;margin: 15px; align-items: center; justify-content: center;">
-        <img src="https://imgs.search.brave.com/-ZILAB97u65KmuB-i-uOA8xEg_iAImjO8qDTNgOP-sE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzI0LzMwLzAy/LzM2MF9GXzUyNDMw/MDIyOF9lZ01za3cw/enZ2ZHdOVUZQZUpM/bHBsY2xLekZhbVhC/ay5qcGc" alt="hello">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi sunt obcaecati veritatis rerum aliquam, nesciunt porro aspernatur assumenda vitae atque?</p>
-      </div>
-      <div class="divo" style="border: 1px solid black; display: flex; flex-direction: column;margin: 15px; align-items: center; justify-content: center;">
-        <img src="https://imgs.search.brave.com/-ZILAB97u65KmuB-i-uOA8xEg_iAImjO8qDTNgOP-sE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzI0LzMwLzAy/LzM2MF9GXzUyNDMw/MDIyOF9lZ01za3cw/enZ2ZHdOVUZQZUpM/bHBsY2xLekZhbVhC/ay5qcGc" alt="hello">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi sunt obcaecati veritatis rerum aliquam, nesciunt porro aspernatur assumenda vitae atque?</p>
-      </div>
-      <div class="divo"  style="border: 1px solid black; display: flex; flex-direction: column;margin: 15px; align-items: center; justify-content: center;">
-        <img src="https://imgs.search.brave.com/-ZILAB97u65KmuB-i-uOA8xEg_iAImjO8qDTNgOP-sE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzI0LzMwLzAy/LzM2MF9GXzUyNDMw/MDIyOF9lZ01za3cw/enZ2ZHdOVUZQZUpM/bHBsY2xLekZhbVhC/ay5qcGc" alt="hello">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi sunt obcaecati veritatis rerum aliquam, nesciunt porro aspernatur assumenda vitae atque?</p>
-      </div>
-      <div class="divo" style="border: 1px solid black; display: flex; flex-direction: column;margin: 15px; align-items: center; justify-content: center;">
-        <img src="https://imgs.search.brave.com/-ZILAB97u65KmuB-i-uOA8xEg_iAImjO8qDTNgOP-sE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzI0LzMwLzAy/LzM2MF9GXzUyNDMw/MDIyOF9lZ01za3cw/enZ2ZHdOVUZQZUpM/bHBsY2xLekZhbVhC/ay5qcGc" alt="hello">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi sunt obcaecati veritatis rerum aliquam, nesciunt porro aspernatur assumenda vitae atque?</p>
-      </div>
-    </div> -->
-
+   
     <!-- Start footer -->
 
     <div id="footerId">
@@ -603,5 +595,35 @@
         })
         .catch(error => console.error('Error fetching footer:', error));
     </script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.choose-right .slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000, // Adjust autoplay speed as needed
+            dots: false, // Optional: Add dots navigation
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false
+                    }
+                }
+                // Add more breakpoints if necessary
+            ]
+        });
+    });
+</script>
+
+
+
   </body>
 </html>
