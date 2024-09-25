@@ -4,7 +4,7 @@
     <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="Site keywords here" />
+    <meta name="keywords" content="BEISEKER PHARMACY" />
     <meta name="description" content="" />
     <meta name="copyright" content="" />
     <meta
@@ -13,7 +13,7 @@
     />
 
     <!-- Title -->
-    <title>Mediplus - Free Medical and Doctor Directory HTML Template.</title>
+    <title>Beiseker Pharmacy</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.png" />
@@ -61,12 +61,54 @@
     <link rel="stylesheet" href="css/responsive.css" />
 
     <style>
+      .choose-right .slider img {
+        border: 0px solid #1a76d1;
+        border-radius: 4px;
+      }
+
+      .choose-right .slider {
+        border: 2px solid #1a76d1;
+        border-radius: 6px;
+      }
+
+      .why-choose .choose-right {
+        height: 100%;
+      }
+
+      .slick-next.slick-arrow,
+      .slick-prev.slick-arrow {
+        display: none !important;
+      }
+
       html {
         scroll-behavior: smooth;
       }
 
+      .choose-right .slider .gandoImage {
+        width: 100vw !important;
+        height: 240px;
+        object-fit: cover;
+      }
+
+      .sliderTesti h1 {
+        color: #1a76d1;
+      }
+
+      .sliderTesti {
+        margin-top: 50px;
+      }
+
       .testimonials-carousel .owl-stage-outer .owl-stage {
         margin-bottom: 10px;
+      }
+
+      .aboutusimages {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+      .why-choose .choose-left p {
+        margin-bottom: 0px !important;
       }
 
       @media screen and (max-width: 768px) {
@@ -124,7 +166,9 @@
               <div class="col-lg-3 col-md-3 col-12">
                 <!-- Start Logo -->
                 <div class="logo">
-                  <a href="index.html"><img src="img/BPharm_logo.png" alt="#" /></a>
+                  <a href="index.html"
+                    ><img src="img/BPharm_logo.png" alt="#"
+                  /></a>
                 </div>
                 <!-- End Logo -->
                 <!-- Mobile Nav -->
@@ -143,7 +187,7 @@
                       <li><a href="#services">Services </a></li>
                       <li><a href="./insurance.html">Insurance</a></li>
                       <li>
-                        <a href="#owl-demo1">Testimonials </a>
+                        <a href="#sliderTesti">Testimonials </a>
                       </li>
                       <li>
                         <a href="#">Contact </a>
@@ -183,13 +227,10 @@
                     <span>Trust!</span>
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris sed nisl pellentesque, faucibus libero eu, gravida
-                    quam.
+                    Various services are available at our medical such as prescription refill renewal, vaccination appointment and many more.
                   </p>
                   <div class="button">
-                    <a href="#" class="btn">Get Appointment</a>
-                    <a href="#" class="btn primary">Learn More</a>
+                    <a href="./appointment.html" class="btn">Get Appointment</a>
                   </div>
                 </div>
               </div>
@@ -211,13 +252,10 @@
                     <span>Trust!</span>
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris sed nisl pellentesque, faucibus libero eu, gravida
-                    quam.
+                    Beiseker Pharmacy is the reputed place in the town which provides different medical services.
                   </p>
                   <div class="button">
-                    <a href="#" class="btn">Get Appointment</a>
-                    <a href="#" class="btn primary">About Us</a>
+                    <a href="./appointment.html" class="btn">Get Appointment</a>
                   </div>
                 </div>
               </div>
@@ -239,13 +277,10 @@
                     <span>Trust!</span>
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris sed nisl pellentesque, faucibus libero eu, gravida
-                    quam.
+                    Beiseker Pharmacy contains flexible appointment types such as Online OR In-person appointment.
                   </p>
                   <div class="button">
                     <a href="./appointment.html" class="btn">Get Appointment</a>
-                    <a href="#" class="btn primary">Conatct Now</a>
                   </div>
                 </div>
               </div>
@@ -280,7 +315,7 @@
             </div>
             <!-- End Single features -->
           </div>
-          
+
           <div class="col-lg-4 col-12">
             <!-- Start Single features -->
             <div class="single-features">
@@ -329,107 +364,112 @@
       </div>
     </section>
     <!--/ End Feautes -->
-    
+
     <!-- Start Fun-facts -->
     <!--/ End Fun-facts -->
-    
-    <div id="owl-demo1" class="testimonials-carousel">
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="img-date">
-            <img
-              src="https://d8f5e3t5.rocketcdn.me/wp-content/uploads/2022/03/icon1.svg"
-            />
-          </div>
-          <div class="discretion-blog">
-            <h3>Make the most of your platform</h3>
-            <p>
-              Reduce operational costs with no compromise on how you run your
-              business.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="img-date">
-            <img
-              src="https://cdn.glitch.global/dd8103f7-7d84-405a-b89a-0b33a3c4212f/icon2.png?v=1719399041953"
-            />
-          </div>
-          <div class="discretion-blog">
-            <h3>Boost agent productivity</h3>
-            <p>
-              Deliver a personalized customer experience with the right context.
-            </p>
+    <div class="sliderTesti" id="sliderTesti">
+      <h1 style="text-align: center; padding-bottom: 25px">Testimonials</h1>
+      <div id="owl-demo1" class="testimonials-carousel">
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="img-date">
+              <img
+                src="https://d8f5e3t5.rocketcdn.me/wp-content/uploads/2022/03/icon1.svg"
+              />
+            </div>
+            <div class="discretion-blog">
+              <h3>Make the most of your platform</h3>
+              <p>
+                Reduce operational costs with no compromise on how you run your
+                business.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="img-date">
-            <img
-              src="https://d8f5e3t5.rocketcdn.me/wp-content/uploads/2022/03/icon4.svg"
-            />
-          </div>
-          <div class="discretion-blog">
-            <h3>User-friendly cloud contact solutions</h3>
-            <p>Designed with the users in mind and can be set up in minutes.</p>
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="img-date">
+              <img
+                src="https://cdn.glitch.global/dd8103f7-7d84-405a-b89a-0b33a3c4212f/icon2.png?v=1719399041953"
+              />
+            </div>
+            <div class="discretion-blog">
+              <h3>Boost agent productivity</h3>
+              <p>
+                Deliver a personalized customer experience with the right
+                context.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <!--END OF CAROSEL-->
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="img-date">
+              <img
+                src="https://d8f5e3t5.rocketcdn.me/wp-content/uploads/2022/03/icon4.svg"
+              />
+            </div>
+            <div class="discretion-blog">
+              <h3>User-friendly cloud contact solutions</h3>
+              <p>
+                Designed with the users in mind and can be set up in minutes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--END OF CAROSEL-->
 
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="img-date">
-            <img
-              src="https://d8f5e3t5.rocketcdn.me/wp-content/uploads/2022/04/icon3-1.svg"
-            />
-          </div>
-          <div class="discretion-blog">
-            <h3>Scales with your business</h3>
-            <p>
-              Upgrade your platform and access more benefits as your business
-              grows.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="img-date">
-            <img
-              src="https://d8f5e3t5.rocketcdn.me/wp-content/uploads/2022/04/icon3-1.svg"
-            />
-          </div>
-          <div class="discretion-blog">
-            <h3>Scales with your business</h3>
-            <p>
-              Upgrade your platform and access more benefits as your business
-              grows.
-            </p>
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="img-date">
+              <img
+                src="https://d8f5e3t5.rocketcdn.me/wp-content/uploads/2022/04/icon3-1.svg"
+              />
+            </div>
+            <div class="discretion-blog">
+              <h3>Scales with your business</h3>
+              <p>
+                Upgrade your platform and access more benefits as your business
+                grows.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="img-date">
-            <img
-              src="https://d8f5e3t5.rocketcdn.me/wp-content/uploads/2022/04/icon3-1.svg"
-            />
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="img-date">
+              <img
+                src="https://d8f5e3t5.rocketcdn.me/wp-content/uploads/2022/04/icon3-1.svg"
+              />
+            </div>
+            <div class="discretion-blog">
+              <h3>Scales with your business</h3>
+              <p>
+                Upgrade your platform and access more benefits as your business
+                grows.
+              </p>
+            </div>
           </div>
-          <div class="discretion-blog">
-            <h3>Scales with your business</h3>
-            <p>
-              Upgrade your platform and access more benefits as your business
-              grows.
-            </p>
+        </div>
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="img-date">
+              <img
+                src="https://d8f5e3t5.rocketcdn.me/wp-content/uploads/2022/04/icon3-1.svg"
+              />
+            </div>
+            <div class="discretion-blog">
+              <h3>Scales with your business</h3>
+              <p>
+                Upgrade your platform and access more benefits as your business
+                grows.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- Start Why choose -->
     <section id="about-us" class="why-choose section">
       <div class="container">
@@ -450,40 +490,50 @@
                 health and wellness, Beiseker Pharmacy is here to provide
                 comprehensive support for all your healthcare needs.
               </p>
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul class="list">
-                    <li>
-                      <i class="fa fa-caret-right"></i>Maecenas vitae luctus
-                      nibh.
-                    </li>
-                    <li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-                    <li>
-                      <i class="fa fa-caret-right"></i>Aliquam feugiat interdum.
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul class="list">
-                    <li>
-                      <i class="fa fa-caret-right"></i>Maecenas vitae luctus
-                      nibh.
-                    </li>
-                    <li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-                    <li>
-                      <i class="fa fa-caret-right"></i>Aliquam feugiat interdum.
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
             <!-- End Choose Left -->
           </div>
-          <div class="col-lg-6 col-12">
+          <div class="col-lg-6 col-12 aboutusimages">
             <!-- Start Choose Rights -->
             <div class="choose-right">
-              <!-- TODO Add slider HERE -->
+              <div class="slider">
+                <div>
+                  <img class="gandoImage" src="./img/img1.jpg" alt="Image 1" />
+                </div>
+                <div>
+                  <img class="gandoImage" src="./img/img2.jpg" alt="Image 1" />
+                </div>
+                <div>
+                  <img class="gandoImage" src="./img/img3.jpg" alt="Image 1" />
+                </div>
+                <div>
+                  <img class="gandoImage" src="./img/img4.jpg" alt="Image 1" />
+                </div>
+                <div>
+                  <img class="gandoImage" src="./img/img5.jpg" alt="Image 1" />
+                </div>
+                <div>
+                  <img class="gandoImage" src="./img/img6.jpg" alt="Image 1" />
+                </div>
+                <div>
+                  <img class="gandoImage" src="./img/img7.jpg" alt="Image 1" />
+                </div>
+                <div>
+                  <img class="gandoImage" src="./img/img8.jpg" alt="Image 1" />
+                </div>
+                <div>
+                  <img class="gandoImage" src="./img/img9.jpg" alt="Image 1" />
+                </div>
+                <div>
+                  <img class="gandoImage" src="./img/img10.jpg" alt="Image 1" />
+                </div>
+                <div>
+                  <img class="gandoImage" src="./img/img11.jpg" alt="Image 1" />
+                </div>
+                <!-- Add more images as needed -->
+              </div>
             </div>
+
             <!-- End Choose Rights -->
           </div>
         </div>
@@ -500,30 +550,9 @@
 
     <!--END OF CAROSEL-->
 
-    <!-- <div class="maindivo" style="display: flex;">
-      <div class="divo" style="border: 1px solid black; display: flex; flex-direction: column;margin: 15px; align-items: center; justify-content: center;">
-        <img src="https://imgs.search.brave.com/-ZILAB97u65KmuB-i-uOA8xEg_iAImjO8qDTNgOP-sE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzI0LzMwLzAy/LzM2MF9GXzUyNDMw/MDIyOF9lZ01za3cw/enZ2ZHdOVUZQZUpM/bHBsY2xLekZhbVhC/ay5qcGc" alt="hello">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi sunt obcaecati veritatis rerum aliquam, nesciunt porro aspernatur assumenda vitae atque?</p>
-      </div>
-      <div class="divo" style="border: 1px solid black; display: flex; flex-direction: column;margin: 15px; align-items: center; justify-content: center;">
-        <img src="https://imgs.search.brave.com/-ZILAB97u65KmuB-i-uOA8xEg_iAImjO8qDTNgOP-sE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzI0LzMwLzAy/LzM2MF9GXzUyNDMw/MDIyOF9lZ01za3cw/enZ2ZHdOVUZQZUpM/bHBsY2xLekZhbVhC/ay5qcGc" alt="hello">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi sunt obcaecati veritatis rerum aliquam, nesciunt porro aspernatur assumenda vitae atque?</p>
-      </div>
-      <div class="divo"  style="border: 1px solid black; display: flex; flex-direction: column;margin: 15px; align-items: center; justify-content: center;">
-        <img src="https://imgs.search.brave.com/-ZILAB97u65KmuB-i-uOA8xEg_iAImjO8qDTNgOP-sE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzI0LzMwLzAy/LzM2MF9GXzUyNDMw/MDIyOF9lZ01za3cw/enZ2ZHdOVUZQZUpM/bHBsY2xLekZhbVhC/ay5qcGc" alt="hello">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi sunt obcaecati veritatis rerum aliquam, nesciunt porro aspernatur assumenda vitae atque?</p>
-      </div>
-      <div class="divo" style="border: 1px solid black; display: flex; flex-direction: column;margin: 15px; align-items: center; justify-content: center;">
-        <img src="https://imgs.search.brave.com/-ZILAB97u65KmuB-i-uOA8xEg_iAImjO8qDTNgOP-sE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzI0LzMwLzAy/LzM2MF9GXzUyNDMw/MDIyOF9lZ01za3cw/enZ2ZHdOVUZQZUpM/bHBsY2xLekZhbVhC/ay5qcGc" alt="hello">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi sunt obcaecati veritatis rerum aliquam, nesciunt porro aspernatur assumenda vitae atque?</p>
-      </div>
-    </div> -->
-
     <!-- Start footer -->
 
-    <div id="footerId">
-
-    </div>
+    <div id="footerId"></div>
 
     <!-- / End footer -->
 
@@ -555,53 +584,108 @@
     <!--/ End Footer Area -->
 
     <!-- jquery Min JS -->
+    <!-- jQuery (only include once, keep one version) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <!-- jquery Migrate JS -->
+
+    <!-- jQuery Migrate (if needed for old jQuery plugins) -->
     <script src="js/jquery-migrate-3.0.0.js"></script>
-    <!-- jquery Ui JS -->
+
+    <!-- Other necessary scripts in proper order -->
     <script src="js/jquery-ui.min.js"></script>
-    <!-- Easing JS -->
     <script src="js/easing.js"></script>
-    <!-- Color JS -->
     <script src="js/colors.js"></script>
-    <!-- Popper JS -->
     <script src="js/popper.min.js"></script>
-    <!-- Bootstrap Datepicker JS -->
     <script src="js/bootstrap-datepicker.js"></script>
-    <!-- Jquery Nav JS -->
     <script src="js/jquery.nav.js"></script>
-    <!-- Slicknav JS -->
     <script src="js/slicknav.min.js"></script>
-    <!-- ScrollUp JS -->
     <script src="js/jquery.scrollUp.min.js"></script>
-    <!-- Niceselect JS -->
     <script src="js/niceselect.js"></script>
-    <!-- Tilt Jquery JS -->
     <script src="js/tilt.jquery.min.js"></script>
-    <!-- Owl Carousel JS -->
     <script src="js/owl-carousel.js"></script>
-    <!-- counterup JS -->
+    <!-- Owl Carousel for testimonial -->
     <script src="js/jquery.counterup.min.js"></script>
-    <!-- Steller JS -->
     <script src="js/steller.js"></script>
-    <!-- Wow JS -->
     <script src="js/wow.min.js"></script>
-    <!-- Magnific Popup JS -->
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Counter Up CDN JS -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Main JS -->
+
+    <!-- Main JS (only include it once, assuming it holds general page-specific JS) -->
     <script src="js/main.js"></script>
+
     <script>
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('footerId').innerHTML = data;
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footerId").innerHTML = data;
         })
-        .catch(error => console.error('Error fetching footer:', error));
+        .catch((error) => console.error("Error fetching footer:", error));
     </script>
-  </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".choose-right .slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000, // Adjust autoplay speed as needed
+          dots: false, // Optional: Add dots navigation
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+              },
+            },
+            // Add more breakpoints if necessary
+          ],
+        });
+      });
+    </script>
+
+<!-- <script>
+
+// Disable right-click context menu
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  document.onkeydown = function(e) {
+    // Disable F12 (Inspect)
+    if (e.key === "F12") {
+      e.preventDefault();
+      return false;
+    }
+
+    // Disable Ctrl+Shift+I (Inspect)
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyI') {
+      e.preventDefault();
+      return false;
+    }
+
+    // Disable Ctrl+U (View Source)
+    if (e.ctrlKey && e.code === 'KeyU') {
+      e.preventDefault();
+      return false;
+    }
+
+    // Disable Ctrl+Shift+C (Inspect Element)
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyC') {
+      e.preventDefault();
+      return false;
+    }
+
+    // Disable Ctrl+Shift+J (Open Console)
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyJ') {
+      e.preventDefault();
+      return false;
+    }
+  };
+</script> -->
+
+
+</body>
 </html>

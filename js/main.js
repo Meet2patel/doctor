@@ -105,7 +105,7 @@ Version:	1.1
       loop: true,
       merge: true,
       nav: false,
-      dots: true,
+      dots: false,
       responsive: {
         1: {
           items: 1,
@@ -346,7 +346,7 @@ $(document).ready(function () {
     nav: true,
     autoplay: true,
     autoplayTimeout: 1000,
-    dots: true,
+    dots: false,
     timeout: 100,
     items: 3, //10 items above 1000px browser width
     responsiveClass: true,

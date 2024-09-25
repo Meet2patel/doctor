@@ -1,333 +1,448 @@
-<link rel="stylesheet" href="style.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Insurance</title>
 
-<style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
 
-/* nav start */
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+    <style>
+      /* nav start */
 
+      /* @import url(https://fonts.googleapis.com/css?family=Raleway); */
 
-.top-nav ul.menu li {
-  transition: color 0.3s ease; /* Smooth transition */
-}
+      .top-nav ul.menu li {
+        transition: color 0.3s ease; /* Smooth transition */
+      }
 
-.top-nav ul.menu li:hover {
-  color: #1a76d1; /* Change text color on hover */
-  cursor: pointer;
-}
+      .top-nav ul.menu li:hover {
+        color: #1a76d1; /* Change text color on hover */
+        cursor: pointer;
+      }
 
+      h2 {
+        vertical-align: center;
+        text-align: center;
+      }
 
-h2 {
-  vertical-align: center;
-  text-align: center;
-}
+      html,
+      body {
+        margin: 0;
+        /* height: 100%; */
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+      }
 
-html, body {
-  margin: 0;
-  /* height: 100%; */
-}
+      * {
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+      }
 
-* {
-  font-family: "Raleway";
-  box-sizing: border-box;
-}
+      .insurance-forms {
+        margin-top: 7% !important;
+      }
 
-.insurance-forms{
-  margin-top: 7% !important;
-}
+      /* Default nav without shadow */
+      .top-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #fff;
+        color: #000;
+        height: 50px;
+        padding: 1em;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        border-bottom: 1px solid #1a76d1;
+        height: 74px;
+      }
 
-/* Default nav without shadow */
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #fff;
-  color: #000;
-  height: 50px;
-  padding: 1em;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  border-bottom: 1px solid #1A76D1;
-  height: 74px;
-}
+      /* Shadow when scrolled */
+      .top-nav.shadow {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
 
-/* Shadow when scrolled */
-.top-nav.shadow {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+      .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
 
+      .menu > li {
+        margin: 0 1rem;
+        overflow: hidden;
+      }
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+      .menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
-}
+      #menu-toggle {
+        display: none;
+      }
 
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+      .menu-button,
+      .menu-button::before,
+      .menu-button::after {
+        display: block;
+        background-color: #1a76d1;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+      }
 
-#menu-toggle {
-  display: none;
-}
+      .menu-button::before {
+        content: "";
+        margin-top: -8px;
+      }
 
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #1a76d1 ;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
+      .menu-button::after {
+        content: "";
+        margin-top: 8px;
+      }
 
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
+      #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+      }
 
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
+      #menu-toggle:checked + .menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+      }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
+      #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+      }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
+      @media (max-width: 767px) {
+        /* .top-nav .second li a {
+          font-size: 14px !important;
+        } */
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
+        .menu-button-container {
+          display: flex;
+        }
 
-@media (max-width: 767px) {
-  .menu-button-container {
-    display: flex;
-  }
+        .insurance-forms {
+          margin-top: 26% !important;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-bottom: 25px;
+        }
 
-  .insurance-forms{
-    margin-top: 20% !important;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 25px;
-  }
-  
-  .insurance-forms h2{
-    margin-top: 15px;
-  }
-  
+        .insurance-forms h2 {
+          margin-top: 15px;
+        }
 
-  .top-nav{
-    justify-content: space-between;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  .top-nav .menu-button-container{
-    margin-bottom: 0px;
-  }
+        .top-nav {
+          justify-content: space-between;
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+        .top-nav .menu-button-container {
+          margin-bottom: 0px;
+        }
 
+        .menu {
+          position: absolute;
+          top: 0;
+          margin-top: 50px;
+          left: 0;
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        #menu-toggle ~ .menu li {
+          height: 0;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        #menu-toggle:checked ~ .menu li {
+          /* border: 1px solid #333; */
+          height: 2.5em;
+          padding: 0.5em;
+          transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+          margin: -1px;
+        }
+        .top-nav .menu li {
+          justify-content: left;
+          padding-left: 25px !important;
+        }
+        .menu > li {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          padding: 0.5em 0;
+          width: 100%;
+          color: #000;
+          background-color: #fff;
+        }
+        .menu > li:not(:last-child) {
+          border-bottom: 1px solid #444;
+        }
 
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    /* border: 1px solid #333; */
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    margin: -1px;
-  }
-  .top-nav .menu li{
-    justify-content: left;
-    padding-left: 25px !important;
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: #000;
-    background-color: #fff;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
-}
+        .insurance-forms h2 {
+        font-size: 28px !important;
+        }
+        .insurance-forms p{
+          font-size: 14px !important;
+        }
+        .insurance-list span{
+          font-size: 14px !important;
 
-@media (min-width: 768px) and (max-width:1000px){
-  .insurance-forms{
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-  }
-  .insurance-forms{
-    margin-top: 8% !important;
-  }
-}
+        }
 
-/* nav ends */
+      }
 
-    
-  .insurance-forms {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
+      @media (min-width: 768px) and (max-width: 800px) {
+        .insurance-forms {
+          padding-left: 25px;
+          padding-right: 25px;
+          padding-bottom: 25px;
+        }
+        .insurance-forms {
+          margin-top: 13% !important;
+        }
+        .insurance-forms h2 {
+        font-size: 32px !important;
+        }
+        .insurance-forms p{
+          font-size: 14px !important;
+        }
+        .insurance-list span{
+          font-size: 14px !important;
+        }
+      }
 
-  .insurance-forms h2 {
-    font-size: 24px;
-    font-weight: bold;
-  }
+      @media (min-width: 800px) and (max-width: 1300px) {
+        .insurance-forms {
+          padding-left: 25px;
+          padding-right: 25px;
+          padding-bottom: 25px;
+        }
+        .insurance-forms {
+          margin-top: 10% !important;
+        }
+      }
 
-  .insurance-forms p {
-    margin-bottom: 20px;
-  }
+      /* nav ends */
 
-  .insurance-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+      .insurance-forms {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
 
-  .insurance-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-  }
+      .insurance-forms h2 {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        color: #1a76d1;
+      }
 
-  .insurance-list span {
-    font-size: 16px;
-  }
+      .insurance-forms p {
+        margin-bottom: 20px;
+        font-size: 16px;
 
-  .download-btn {
-    background-color: #1A76D1;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
+      }
 
-  .download-btn:hover {
-    background-color: #2C2D3F;
-  }
-</style>
+      .insurance-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
 
+      .insurance-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+      }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<section class="top-nav">
-  <div>
-    Logo Here
-  </div>
-  <input id="menu-toggle" type="checkbox" />
-  <label class='menu-button-container' for="menu-toggle">
-    <div class='menu-button'></div>
-  </label>
-  <ul class="menu">
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-    <li>Four</li>
-    <li>Five</li>
-  </ul>
-</section>
+      .insurance-list span {
+        font-size: 16px;
+      }
 
+      .download-btn {
+        background-color: #1a76d1;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
 
- 
+      .download-btn:hover {
+        background-color: #2c2d3f;
+      }
+      .brandlogo {
+        width: 150px;
+      }
+      .top-nav .second li {
+        list-style-type: none;
+      }
 
+      .top-nav .second li a:hover {
+        color: #1a76d1;
+      }
+      .top-nav .second li a {
+        text-decoration: none;
+        color: #2c2d3f;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 25px 12px;
+        position: relative;
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
 
-<div class="insurance-forms">
-  <h2 style="display: flex; align-items: center; justify-content: center; font-size: 32px;">INSURANCE FORMS</h2>
-  <p>
-    Please find the correct insurance form for your coverage from the list
-    below.
-  </p>
-  <ul class="insurance-list">
-    <li>
-      <span>ALBERTA BLUE CROSS</span>
-      <a href="./appointment.html" download  class="download-btn">DOWNLOAD</a>
-    </li>
-    <li>
-      <span>CANADA LIFE</span>
-      <a href="./appointment.html" download class="download-btn">DOWNLOAD</a>
-    </li>
-    <li>
-      <span>CLAIM SECURE</span>
-      <a href="./appointment.html" download class="download-btn">DOWNLOAD</a>
-    </li>
-    <li>
-      <span>GREAT WEST LIFE</span>
-      <a href="./appointment.html" download class="download-btn">DOWNLOAD</a>
-    </li>
-    <li>
-      <span>GREEN SHIELD</span>
-      <a href="./appointment.html" download class="download-btn">DOWNLOAD</a>
-    </li>
-    <li>
-      <span>JOHNSON INC.</span>
-      <a href="./appointment.html" download class="download-btn">DOWNLOAD</a>
-    </li>
-    <li>
-      <span>MANULIFE</span>
-      <a href="./appointment.html" download class="download-btn">DOWNLOAD</a>
-    </li>
-    <li>
-      <span>NEXGEN RX</span>
-      <a href="./appointment.html" download class="download-btn">DOWNLOAD</a>
-    </li>
-  </ul>
-</div>
+  <body>
+    <section class="top-nav">
+      <div>
+        <a href="./index.html"><img class="brandlogo" src="./img/BPharm_logo.png" alt="Logo" /></a>
+      </div>
+      <div class="second">
+        <li><a class="menuhome" href="./index.html">Home</a></li>
+      </div>
+      <!-- <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a class="menuhome" href="/">Home</a></li>
+      </ul> -->
+    </section>
 
+    <div class="insurance-forms">
+      <h2>INSURANCE FORMS</h2>
+      <p>
+        Please find the correct insurance form for your coverage from the list
+        below.
+      </p>
+      <ul class="insurance-list">
+        <li>
+          <span>ALBERTA BLUE CROSS</span>
+          <a
+            href="./insurances/AB_Blue_Cross_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>CANADA LIFE</span>
+          <a
+            href="./insurances/Canada_Life_Insurance_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>CLAIM SECURE</span>
+          <a
+            href="./insurances/Claimsecure_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>GREAT WEST LIFE</span>
+          <a
+            href="./insurances/Great_West_Life_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>GREEN SHIELD</span>
+          <a
+            href="./insurances/Green_Shield_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>NEXGEN RX</span>
+          <a
+            href="./insurances/Nexegen_Rx_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>JOHNSON INC.</span>
+          <a
+            href="./insurances/RTO_Group_Benefits_Form.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+        <li>
+          <span>MANULIFE</span>
+          <a
+            href="./insurances/affinity-markets-extended-health-care-claim-form-cm5000e.pdf"
+            download
+            class="download-btn"
+            >DOWNLOAD</a
+          >
+        </li>
+      </ul>
+    </div>
 
-<script>
-  window.addEventListener('scroll', function() {
-    const topNav = document.querySelector('.top-nav');
-    
-    if (window.scrollY > 0) {
-      topNav.classList.add('shadow');
-    } else {
-      topNav.classList.remove('shadow');
-    }
-  });
-</script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const topNav = document.querySelector(".top-nav");
+
+        if (window.scrollY > 0) {
+          topNav.classList.add("shadow");
+        } else {
+          topNav.classList.remove("shadow");
+        }
+      });
+    </script>
+  </body>
+</html>
