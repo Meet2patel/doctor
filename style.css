@@ -54,6 +54,11 @@ body {
   font-size: 14px;
   color: #888;
 }
+
+section {
+  scroll-margin-top: 125px;
+}
+
 .pro-features {
   position: fixed;
   right: -300px;

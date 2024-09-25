@@ -509,7 +509,7 @@
         </div>
       </div>
 
-      <button type="submit" class="submit-btn">Submit</button>
+      <button type="submit" name="submit-btn" class="submit-btn">Submit</button>
     </form>
   </div>
   <?php if (!empty($message)): ?>
