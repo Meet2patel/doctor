@@ -127,6 +127,71 @@
         padding: 10px;
       }
     }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      align-items: center;
+      /* Center vertically */
+      justify-content: center;
+      /* Center horizontally */
+      display: flex;
+      /* Flexbox to center content */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: white;
+      /* padding: 20px; */
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+      max-height: 90%;
+      /* Allow max height for large content */
+      overflow-y: auto;
+      /* Scrollable if content exceeds max-height */
+    }
+
+    #modalTitle {
+      margin-bottom: 21px;
+    }
+
+    #modalDescription {
+      margin-bottom: 23px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /* Close Button */
+    .close {
+      color: #000;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      color: black;
+      opacity: 1;
+      padding-right: 8px;
+      padding-top: 1px;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -283,7 +348,9 @@
       <div class="row">
         <div class="col-lg-4 col-12">
           <!-- Start Single features -->
-          <div class="single-features">
+          <div class="single-features"
+            data-description="Book in-person or virtual consultations with a doctor. Fill out our comprehensive form to streamline your appointment process 111111111111111111."
+            data-title="111111111111">
             <div class="signle-icon">
               <i class="icofont icofont-ambulance-cross"></i>
             </div>
@@ -298,7 +365,9 @@
 
         <div class="col-lg-4 col-12">
           <!-- Start Single features -->
-          <div class="single-features">
+          <div class="single-features"
+            data-description="Book in-person or virtual consultations with a doctor. Fill out our comprehensive form to streamline your appointment process.22222222222222"
+            data-title="22222222222">
             <div class="signle-icon">
               <i class="icofont icofont-ambulance-cross"></i>
             </div>
@@ -313,7 +382,9 @@
         </div>
         <div class="col-lg-4 col-12">
           <!-- Start Single features -->
-          <div class="single-features">
+          <div class="single-features"
+            data-description="Book in-person or virtual consultations with a doctor. Fill out our comprehensive form to streamline your appointment process.33333333333333"
+            data-title="33333333333">
             <div class="signle-icon">
               <i class="icofont icofont-medical-sign-alt"></i>
             </div>
@@ -327,7 +398,9 @@
         </div>
         <div class="col-lg-4 col-12">
           <!-- Start Single features -->
-          <div class="single-features last">
+          <div class="single-features last"
+            data-description="Book in-person or virtual consultations with a doctor. Fill out our comprehensive form to streamline your appointment process.4444444444444444"
+            data-title="44444444444">
             <div class="signle-icon">
               <i class="icofont icofont-stethoscope"></i>
             </div>
@@ -344,6 +417,13 @@
     </div>
   </section>
   <!--/ End Feautes -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
 
   <!-- Start Fun-facts -->
   <!--/ End Fun-facts -->
@@ -615,6 +695,50 @@
       });
     });
   </script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("serviceModal");
+
+    // Ensure modal is hidden on page load
+    window.onload = function () {
+      modal.style.display = "none";
+    };
+
+    var modalTitle = document.getElementById("modalTitle");
+    var modalDescription = document.getElementById("modalDescription");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Add click event listeners to each service
+    var services = document.querySelectorAll(".single-features");
+
+    services.forEach(function (service) {
+      service.addEventListener("click", function () {
+        var title = this.getAttribute("data-title");
+        var description = this.getAttribute("data-description");
+
+        modalTitle.innerText = title;
+        modalDescription.innerText = description;
+
+        modal.style.display = "flex";
+      });
+    });
+
+    // Close the modal when the user clicks on <span> (x)
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // Close the modal if the user clicks outside of it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
   <!-- <script>
 
     // Disable right-click context menu
@@ -654,7 +778,6 @@
       }
     };
   </script> -->
-
 
 </body>
 

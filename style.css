@@ -4177,7 +4177,6 @@ section {
 .testimonials-carousel .owl-item {
   float: left;
   border-radius: 5px;
-  border: 1px solid rgba(87, 59, 255, 0.21);
 }
 .testimonials-carousel .owl-controls .owl-page,
 .testimonials-carousel .owl-controls .owl-buttons div {

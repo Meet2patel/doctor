@@ -335,8 +335,9 @@ Version:	1.1
   });
 })(jQuery);
 
-// ================================================ testimonials starts ========================
-
+/*====================
+		testimonials starts
+	======================*/
 $(document).ready(function () {
   var owl = $("#owl-demo1");
 
@@ -345,7 +346,8 @@ $(document).ready(function () {
     margin: 10,
     nav: true,
     autoplay: true,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 2000,
+    smartSpeed: 1000,
     dots: false,
     timeout: 100,
     items: 3, //10 items above 1000px browser width
@@ -366,4 +368,6 @@ $(document).ready(function () {
   });
 });
 
-// ================================================ testimonials ends ========================
+/*====================
+		testimonials starts
+	======================*/
