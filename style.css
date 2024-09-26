@@ -894,6 +894,7 @@ section {
   transition: all 0.4s ease;
 }
 .Feautes .single-features:hover .signle-icon i {
+  cursor: pointer;
   background: #ffffff;
   color: #1a76d1;
   border-color: transparent;
@@ -901,11 +902,13 @@ section {
 .Feautes .single-features h3 {
   padding-top: 128px;
   color: #ffffff;
+  cursor: pointer;
   font-weight: 600;
   font-size: 21px;
 }
 .Feautes .single-features p {
   margin-top: 20px;
+  cursor: pointer;
   color: #fff;
 }
 /*=============================
@@ -1334,7 +1337,7 @@ section {
   line-height: 26px;
   position: relative;
   margin-bottom: 20px;
-  color: #fff;
+  color: #ffffff;
 }
 .services-details-img blockquote i {
   position: absolute;
@@ -4239,12 +4242,9 @@ section {
   color: #1f2d3d;
   font-size: 20px;
   font-weight: 700;
-  margin-top: 0px;
-  margin-bottom: 10px;
   line-height: 26px;
   font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
   margin-top: 25px !important;
-  margin-bottom: 20px !important;
 }
 
 .testimonials-carousel .et_pb_module.et_pb_text_align_center {
