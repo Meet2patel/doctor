@@ -4124,8 +4124,8 @@ section {
   color: #2c2d3f;
 }
 .footer .copyright {
-  background: #1a76d1;
-  padding: 25px 0px 25px 0px;
+  /* background: #1a76d1; */
+  padding: 25px 0px 0px 0px;
   text-align: center;
 }
 .footer .copyright .copyright-content p {
