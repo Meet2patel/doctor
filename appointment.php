@@ -486,25 +486,13 @@
         <textarea id="address" name="address" rows="4" required></textarea>
       </div>
       <div class="form-group">
-        <label for="appointment-type">Appointment Type:</label>
+        <label for="appointment-type">Vaccination Type:</label>
         <div class="custom-select" id="disease-select">
           <div class="select-selected">Select</div>
           <div class="select-items select-hide">
-            <div>In-Person</div>
-            <div>Online</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="doctor-name">Select Doctor:</label>
-        <div class="custom-select" id="doctor-select">
-          <div class="select-selected">Select a doctor</div>
-          <div class="select-items select-hide">
-            <div>Dr. Smith</div>
-            <div>Dr. Jones</div>
-            <div>Dr. Brown</div>
-            <div>Dr. Williams</div>
+            <div>Pneumonia Vaccination</div>
+            <div>Flu Vaccination</div>
+            <div>Travel Vaccination</div>
           </div>
         </div>
       </div>

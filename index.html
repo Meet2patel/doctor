@@ -1,765 +1,943 @@
 <!DOCTYPE html>
 <html class="no-js" lang="eng">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="BEISEKER PHARMACY" />
+    <meta name="description" content="" />
+    <meta name="copyright" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Meta Tags -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="keywords" content="BEISEKER PHARMACY" />
-  <meta name="description" content="" />
-  <meta name="copyright" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Title -->
+    <title>Beiseker Pharmacy</title>
 
-  <!-- Title -->
-  <title>Beiseker Pharmacy</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-  <!-- Favicon -->
-  <link rel="icon" href="img/favicon.png" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-    rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- icofont CSS -->
+    <link rel="stylesheet" href="css/icofont.css" />
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <!-- Nice Select CSS -->
-  <link rel="stylesheet" href="css/nice-select.css" />
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <!-- icofont CSS -->
-  <link rel="stylesheet" href="css/icofont.css" />
-  <!-- Slicknav -->
-  <link rel="stylesheet" href="css/slicknav.min.css" />
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="css/owl-carousel.css" />
-  <!-- Datepicker CSS -->
-  <link rel="stylesheet" href="css/datepicker.css" />
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <!-- Magnific Popup CSS -->
-  <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-  <!-- Medipro CSS -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .servicesection {
+        background: #fff;
+        padding-bottom: 50px ;
+        padding-top: 0px ;
+      }
+      .servicesection.Feautes .single-features:hover .signle-icon i {
+        border-color: #dddddd;
+      }
+      .servicesection .container h1 {
+        color: black;
+      }
+      .servicesection.Feautes .single-features .signle-icon i {
+        color: #1a76d1;
+      }
+      .servicesection.Feautes .single-features h3 {
+        color: #000;
+      }
+      .servicesection.Feautes .single-features p {
+        color: #2c2d3f;
+      }
 
-  <style>
-    .choose-right .slider img {
-      border: 0px solid #1a76d1;
-      border-radius: 4px;
-    }
+      .aboutimagesus {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+      }
 
-    .choose-right .slider {
-      border: 2px solid #1a76d1;
-      border-radius: 6px;
-    }
+      .choose-right .slider img {
+        border: 2px solid #1a76d1;
+        border-radius: 8px;
+      }
+      /* 
+      .choose-right .slider {
+        border: 2px solid #1a76d1; 
+         border-radius: 6px;
+      } */
 
-    .why-choose .choose-right {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-    }
+      .why-choose .choose-right {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
 
-    .slick-next.slick-arrow,
-    .slick-prev.slick-arrow {
-      display: none !important;
-    }
+      .slick-next.slick-arrow,
+      .slick-prev.slick-arrow {
+        display: none !important;
+      }
 
-    html {
-      scroll-behavior: smooth;
-    }
+      html {
+        scroll-behavior: smooth;
+      }
 
-    .choose-right .slider .gandoImage {
-      width: 100vw !important;
-      height: 240px;
-      object-fit: cover;
-    }
+      .choose-right .slider .gandoImage {
+        width: 50vw !important;
+        height: 50vh;
+        /* object-fit: cover; */
+      }
 
-    .sliderTesti h1 {
-      color: #1a76d1;
-    }
+      .sliderTesti h1 {
+        color: #1a76d1;
+      }
 
-    .sliderTesti {
+      /* .sliderTesti {
       margin-top: 50px;
-    }
+  }
+      */
 
-    .testimonials-carousel .owl-stage-outer .owl-stage {
-      margin-bottom: 10px;
-    }
-
-    .aboutusimages {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-    }
-
-    .why-choose .choose-left p {
-      margin-bottom: 0px !important;
-    }
-
-    @media screen and (max-width: 768px) {
-      .Feautes.section .container .row {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+      .testimonials-carousel .owl-stage-outer .owl-stage {
+        margin-bottom: 10px;
       }
 
-      .Feautes.section .container .col-lg-4 {
-        max-width: 100%;
-      }
-    }
-
-    @media (min-width: 768px) and (max-width: 991px) {
-      .Feautes.section .container .row {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+      .aboutusimages {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
       }
 
-      .Feautes.section .container .col-lg-4 {
-        max-width: 100%;
+      .why-choose .choose-left {
+        margin-bottom: 40px;
       }
 
-      .Feautes .single-features {
-        padding: 10px;
+      .why-choose .choose-left p {
+        margin-bottom: 0px !important;
       }
-    }
 
-    /* The Modal (background) */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.4);
-      align-items: center;
-      /* Center vertically */
-      justify-content: center;
-      /* Center horizontally */
-      display: flex;
-      /* Flexbox to center content */
-    }
-
-    /* Modal Content */
-    .modal-content {
-      background-color: white;
-      /* padding: 20px; */
-      border: 1px solid #888;
-      width: 80%;
-      max-width: 500px;
-      text-align: center;
-      max-height: 90%;
-      /* Allow max height for large content */
-      overflow-y: auto;
-      /* Scrollable if content exceeds max-height */
-    }
-
-    #modalTitle {
-      margin-bottom: 21px;
-    }
-
-    #modalDescription {
-      margin-bottom: 23px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    /* Close Button */
-    .close {
-      color: #000;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      color: black;
-      opacity: 1;
-      padding-right: 8px;
-      padding-top: 1px;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .checked {
-      color: #1a76d1;
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="loader">
-      <div class="loader-outter"></div>
-      <div class="loader-inner"></div>
-
-      <div class="indicator">
-        <svg width="16px" height="12px">
-          <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-          <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <!-- End Preloader -->
-
-  <!-- Header Area -->
-  <header class="header">
-    <!-- Topbar -->
-    <!-- End Topbar -->
-    <!-- Header Inner -->
-    <div class="header-inner">
-      <div class="container">
-        <div class="inner">
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-12">
-              <!-- Start Logo -->
-              <div class="logo">
-                <a href="index.html"><img src="img/BPharm_logo.png" alt="#" /></a>
-              </div>
-              <!-- End Logo -->
-              <!-- Mobile Nav -->
-              <div class="mobile-nav"></div>
-              <!-- End Mobile Nav -->
-            </div>
-            <div class="col-lg-7 col-md-9 col-12">
-              <!-- Main Menu -->
-              <div class="main-menu">
-                <nav class="navigation">
-                  <ul class="nav menu">
-                    <li class="active">
-                      <a href="#">Home</a>
-                    </li>
-                    <li><a href="#about-us">About </a></li>
-                    <li><a href="#services">Services </a></li>
-                    <li><a href="./insurance.html">Insurance</a></li>
-                    <li>
-                      <a href="#sliderTesti">Testimonials</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <!--/ End Main Menu -->
-            </div>
-            <div class="col-lg-2 col-12">
-              <div class="get-quote">
-                <a href="appointment.php" class="btn">Book Appointment</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/ End Header Inner -->
-  </header>
-  <!-- End Header Area -->
-
-  <!-- Slider Area -->
-  <section class="slider">
-    <div class="hero-slider">
-      <!-- Start Single Slider -->
-      <div class="single-slider" style="background-image: url('img/slider2.jpg')">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="text">
-                <h1>
-                  We Provide <span>Medical</span> Services That You Can
-                  <span>Trust!</span>
-                </h1>
-                <p>
-                  Various services are available at our medical such as prescription refill renewal, vaccination
-                  appointment and many more.
-                </p>
-                <div class="button">
-                  <a href="./appointment.php" class="btn">Get Appointment</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Single Slider -->
-      <!-- Start Single Slider -->
-      <div class="single-slider" style="background-image: url('img/slider.jpg')">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="text">
-                <h1>
-                  We Provide <span>Medical</span> Services That You Can
-                  <span>Trust!</span>
-                </h1>
-                <p>
-                  Beiseker Pharmacy is the reputed place in the town which provides different medical services.
-                </p>
-                <div class="button">
-                  <a href="./appointment.php" class="btn">Get Appointment</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Start End Slider -->
-      <!-- Start Single Slider -->
-      <div class="single-slider" style="background-image: url('img/slider3.jpg')">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="text">
-                <h1>
-                  We Provide <span>Medical</span> Services That You Can
-                  <span>Trust!</span>
-                </h1>
-                <p>
-                  Beiseker Pharmacy contains flexible appointment types such as Online OR In-person appointment.
-                </p>
-                <div class="button">
-                  <a href="./appointment.php" class="btn">Get Appointment</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Single Slider -->
-    </div>
-  </section>
-  <!--/ End Slider Area -->
-
-  <!-- Start Schedule Area -->
-
-  <!--/End Start schedule Area -->
-
-  <!-- Start Feautes -->
-  <section id="services" class="Feautes section">
-    <div class="container">
-      <h1>Services</h1>
-      <div class="row">
-        <div class="col-lg-4 col-12">
-          <!-- Start Single features -->
-          <div class="single-features"
-            data-description="At Beiseker Pharmacy, we make scheduling a doctor’s appointment easier than ever. Whether you prefer the convenience of a virtual consultation from the comfort of your home or an in-person visit at one of our clinics, our platform offers a streamlined process to connect you with the right healthcare provider for your needs."
-            data-title="Book Your Doctor Now">
-            <div class="signle-icon">
-              <i class="icofont icofont-ambulance-cross"></i>
-            </div>
-            <h3>Doctor Appointment</h3>
-            <p>
-              Book in-person or virtual consultations with a doctor. Fill out
-              our comprehensive form to streamline your appointment process
-            </p>
-          </div>
-          <!-- End Single features -->
-        </div>
-
-        <div class="col-lg-4 col-12">
-          <!-- Start Single features -->
-          <div class="single-features"
-            data-description="If you're relocating or changing pharmacies, we make transferring your prescriptions easy and stress-free. Just provide your current pharmacy information, and we'll manage the process to ensure a smooth transition without disrupting your medication routine."
-            data-title="Prescription Refill & Delivery">
-            <div class="signle-icon">
-              <i class="icofont icofont-ambulance-cross"></i>
-            </div>
-            <h3>Prescription Refill/Renewal</h3>
-            <p>
-              Get your prescriptions delivered right to your doorstep with our
-              free delivery service. Easily transfer your prescriptions if
-              you're relocating.
-            </p>
-          </div>
-          <!-- End Single features -->
-        </div>
-        <div class="col-lg-4 col-12">
-          <!-- Start Single features -->
-          <div class="single-features"
-            data-description="Our service offers flexible scheduling for vaccination appointments, allowing you to choose a time that suits your busy routine at a local clinic or pharmacy, minimizing wait times. For international travelers, we provide consultations on necessary vaccines and preventive measures for your destination. Once booked, you'll receive confirmation and reminders via email or SMS, with easy options to reschedule if needed. Stay protected from preventable illnesses and safeguard your health—book your vaccination appointment today!"
-            data-title="Vaccination Appointment Services">
-            <div class="signle-icon">
-              <i class="icofont icofont-medical-sign-alt"></i>
-            </div>
-            <h3>Vaccination Appointment</h3>
-            <p>
-              Schedule appointments for flu, pneumonia vaccinations, clinic
-              visits, and travel consultations at your convenience.
-            </p>
-          </div>
-          <!-- End Single features -->
-        </div>
-        <div class="col-lg-4 col-12">
-          <!-- Start Single features -->
-          <div class="single-features last"
-            data-description="Discover relief from chronic migraines with our specialized Botox treatment, a clinically proven method for reducing the frequency and intensity of migraine symptoms. Administered by our experienced healthcare professionals, this treatment involves targeted injections that block pain signals in the brain. Many patients report significant improvement within just a few sessions, leading to fewer headache days and enhanced quality of life. Our team will work closely with you to develop a personalized treatment plan tailored to your specific needs, ensuring a comfortable and effective experience. Say goodbye to debilitating migraines—schedule your consultation today!"
-            data-title="Say Goodbye to Migraines with Botox Therapy">
-            <div class="signle-icon">
-              <i class="icofont icofont-stethoscope"></i>
-            </div>
-            <h3>Botox Treatment for Migraine</h3>
-            <p>
-              Experience a proven method for reducing migraine symptoms
-              through our Botox treatment specifically designed for migraine
-              sufferers.
-            </p>
-          </div>
-          <!-- End Single features -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ End Feautes -->
-  <div id="serviceModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h3 id="modalTitle"></h3>
-      <p id="modalDescription"></p>
-    </div>
-  </div>
-
-  <!-- Start Fun-facts -->
-  <!--/ End Fun-facts -->
-  <section class="sliderTesti" id="sliderTesti">
-    <h1 style="text-align: center; padding-bottom: 25px">Testimonials</h1>
-    <div id="owl-demo1" class="testimonials-carousel">
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="discretion-blog">
-            <h3>Jalpesh Bhuva</h3>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <p>
-              The Pharmacy under New management. Great discount program for prescription purchase. Great Customer
-              service and Health care. I would prefer this pharmacy.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="discretion-blog">
-            <h3>Shanyn Silinski</h3>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <p>
-              Always helpful, makes sure we get the information we need as well as fast accurate refills. Very caring
-              and knowledgeable.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="discretion-blog">
-            <h3>Cara McColman</h3>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <p>
-              Literally the most caring pharmacy in Canada. Hand-delivers our medications, calls to remind us of
-              renewals, updates us about vaccinations and other health measures - AND they're kind and friendly.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="discretion-blog">
-            <h3>Sam Arnold</h3>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <p>
-              Drew and his staff are friendly, professional and knowledgeable. Drew made sure I got everything I needed
-              for my daughter and make good suggestions to help her feel better.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="discretion-blog">
-            <h3>Darcy Wright</h3>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <p>
-              Drew and his team are not only our pharmacist but they treat us like family. Absolutely the best pharmacy
-              going. The knowledge of their pharmaceutical is above top notch. Highly recommend
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="discretion-blog">
-            <h3>Jipal Patel</h3>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <p>
-              Excellent service with polite response and satisfied answers regarding health issues.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Start Why choose -->
-  <section id="about-us" class="why-choose section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-12">
-          <!-- Start Choose Left -->
-          <div class="choose-left">
-            <h3 class="bluecolor">About Us</h3>
-            <p>
-              Welcome to Beiseker Pharmacy, your trusted healthcare
-              destination committed to delivering exceptional medical
-              services. At Beiseker Pharmacy, we offer a variety of essential
-              health services including vaccinations to keep you protected,
-              free prescription delivery for your convenience, and
-              professional Botox treatments to enhance your well-being.
-              Additionally, our on-site physician services ensure that you
-              receive prompt and personalized medical care. Dedicated to your
-              health and wellness, Beiseker Pharmacy is here to provide
-              comprehensive support for all your healthcare needs.
-            </p>
-          </div>
-          <!-- End Choose Left -->
-        </div>
-        <div class="col-lg-6 col-12 aboutusimages">
-          <!-- Start Choose Rights -->
-          <div class="choose-right">
-            <div class="slider">
-              <div>
-                <img class="gandoImage" src="./img/img1.jpg" alt="Image 1" />
-              </div>
-              <div>
-                <img class="gandoImage" src="./img/img2.jpg" alt="Image 1" />
-              </div>
-              <div>
-                <img class="gandoImage" src="./img/img3.jpg" alt="Image 1" />
-              </div>
-              <div>
-                <img class="gandoImage" src="./img/img4.jpg" alt="Image 1" />
-              </div>
-              <div>
-                <img class="gandoImage" src="./img/img5.jpg" alt="Image 1" />
-              </div>
-              <div>
-                <img class="gandoImage" src="./img/img6.jpg" alt="Image 1" />
-              </div>
-              <div>
-                <img class="gandoImage" src="./img/img7.jpg" alt="Image 1" />
-              </div>
-              <div>
-                <img class="gandoImage" src="./img/img8.jpg" alt="Image 1" />
-              </div>
-              <div>
-                <img class="gandoImage" src="./img/img9.jpg" alt="Image 1" />
-              </div>
-              <div>
-                <img class="gandoImage" src="./img/img10.jpg" alt="Image 1" />
-              </div>
-              <div>
-                <img class="gandoImage" src="./img/img11.jpg" alt="Image 1" />
-              </div>
-              <!-- Add more images as needed -->
-            </div>
-          </div>
-
-          <!-- End Choose Rights -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ End Why choose -->
-
-  <!-- Start Call to action -->
-  <section class="call-action overlay" data-stellar-background-ratio="0.5"></section>
-  <!--/ End Call to action -->
-
-
-  <!-- Start footer -->
-
-  <div id="footerId"></div>
-
-  <!-- / End footer -->
-
-  <!-- script to popup success of form JS -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-      // Create a Promise that resolves after a 2-second delay
-      new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(); // Resolves the promise after 2 seconds
-        }, 1500);
-      }).then(() => {
-        // This code runs after the 2-second delay
-
-        // Check if the alert message is stored in localStorage
-        var message = localStorage.getItem('alertMessage');
-        var messageType = localStorage.getItem('alertMessageType');
-
-        if (message) {
-          // Display the alert based on the messageType
-          if (messageType === 'success') {
-            alert("Success: " + message);
-          } else if (messageType === 'error') {
-            alert("Error: " + message);
-          } else {
-            alert(message); // Fallback for any other message type
-          }
-
-          // Clear the stored message so it's not shown again
-          localStorage.removeItem('alertMessage');
-          localStorage.removeItem('alertMessageType');
+      @media screen and (max-width: 768px) {
+        .servicesection {
+          padding-bottom: 0px;
         }
-      });
-    });
-  </script>
 
-  <!-- jQuery (only include once, keep one version) -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        .servicesection.Feautes h1{
+          font-size: 30px;
+        }
 
-  <!-- jQuery Migrate (if needed for old jQuery plugins) -->
-  <script src="js/jquery-migrate-3.0.0.js"></script>
+        .Feautes.section .container .row {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
 
-  <!-- Other necessary scripts in proper order -->
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/easing.js"></script>
-  <script src="js/colors.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.nav.js"></script>
-  <script src="js/slicknav.min.js"></script>
-  <script src="js/jquery.scrollUp.min.js"></script>
-  <script src="js/niceselect.js"></script>
-  <script src="js/tilt.jquery.min.js"></script>
-  <script src="js/owl-carousel.js"></script>
-  <!-- Owl Carousel for testimonial -->
-  <script src="js/jquery.counterup.min.js"></script>
-  <script src="js/steller.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-  <!-- Main JS (only include it once, assuming it holds general page-specific JS) -->
-  <script src="js/main.js"></script>
-
-  <script>
-    fetch("footer.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById("footerId").innerHTML = data;
-      })
-      .catch((error) => console.error("Error fetching footer:", error));
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".choose-right .slider").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000, // Adjust autoplay speed as needed
-        dots: false, // Optional: Add dots navigation
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: false,
-            },
-          },
-          // Add more breakpoints if necessary
-        ],
-      });
-    });
-  </script>
-
-  <script>
-    // Get the modal
-    var modal = document.getElementById("serviceModal");
-
-    // Ensure modal is hidden on page load
-    window.onload = function () {
-      modal.style.display = "none";
-    };
-
-    var modalTitle = document.getElementById("modalTitle");
-    var modalDescription = document.getElementById("modalDescription");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // Add click event listeners to each service
-    var services = document.querySelectorAll(".single-features");
-
-    services.forEach(function (service) {
-      service.addEventListener("click", function () {
-        var title = this.getAttribute("data-title");
-        var description = this.getAttribute("data-description");
-
-        modalTitle.innerText = title;
-        modalDescription.innerText = description;
-
-        modal.style.display = "flex";
-      });
-    });
-
-    // Close the modal when the user clicks on <span> (x)
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
-
-    // Close the modal if the user clicks outside of it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+        .Feautes.section .container .col-lg-4 {
+          max-width: 100%;
+        }
+        .choose-right .slider .gandoImage {
+          width: 100vw !important;
+          height: 35vh;
+          /* object-fit: cover; */
+        }
+        .why-choose .choose-left {
+          margin-bottom: 20px;
+        }
       }
-    };
-  </script>
 
-  <!-- <script>
+      @media (min-width: 768px) and (max-width: 991px) {
+        .Feautes.section .container .row {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .Feautes.section .container .col-lg-4 {
+          max-width: 100%;
+        }
+
+        .Feautes .single-features {
+          padding: 10px;
+        }
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        align-items: center;
+        /* Center vertically */
+        justify-content: center;
+        /* Center horizontally */
+        display: flex;
+        /* Flexbox to center content */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        background-color: white;
+        /* padding: 20px; */
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+        max-height: 90%;
+        /* Allow max height for large content */
+        overflow-y: auto;
+        /* Scrollable if content exceeds max-height */
+      }
+
+      #modalTitle {
+        margin-bottom: 21px;
+      }
+
+      #modalDescription {
+        margin-bottom: 23px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      /* Close Button */
+      .close {
+        color: #000;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        color: black;
+        opacity: 1;
+        padding-right: 8px;
+        padding-top: 1px;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .checked {
+        color: #1a76d1;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+
+        <div class="indicator">
+          <svg width="16px" height="12px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline
+              id="front"
+              points="1 6 4 6 6 11 10 1 12 6 15 6"
+            ></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Header Area -->
+    <header class="header">
+      <!-- Topbar -->
+      <!-- End Topbar -->
+      <!-- Header Inner -->
+      <div class="header-inner">
+        <div class="container">
+          <div class="inner">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-12">
+                <!-- Start Logo -->
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="img/BPharm_logo.png" alt="#"
+                  /></a>
+                </div>
+                <!-- End Logo -->
+                <!-- Mobile Nav -->
+                <div class="mobile-nav"></div>
+                <!-- End Mobile Nav -->
+              </div>
+              <div class="col-lg-7 col-md-9 col-12">
+                <!-- Main Menu -->
+                <div class="main-menu">
+                  <nav class="navigation">
+                    <ul class="nav menu">
+                      <li class="active">
+                        <a href="#">Home</a>
+                      </li>
+                      <li><a href="#about-us">About </a></li>
+                      <li><a href="#services">Services </a></li>
+                      <li><a href="./insurance.html">Insurance</a></li>
+                      <li>
+                        <a href="#sliderTesti">Testimonials</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!--/ End Main Menu -->
+              </div>
+              <div class="col-lg-2 col-12">
+                <div class="get-quote">
+                  <a href="appointment.php" class="btn">Book Appointment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Slider Area -->
+    <section class="slider">
+      <div class="hero-slider">
+        <!-- Start Single Slider -->
+        <div
+          class="single-slider"
+          style="background-image: url('img/slider2.jpg')"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="text">
+                  <h1>
+                    We Provide <span>Medical</span> Services That You Can
+                    <span>Trust!</span>
+                  </h1>
+                  <p>
+                    Various services are available at our medical such as
+                    prescription refill renewal, vaccination appointment and
+                    many more.
+                  </p>
+                  <div class="button">
+                    <a href="./appointment.php" class="btn">Get Appointment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Slider -->
+        <!-- Start Single Slider -->
+        <div
+          class="single-slider"
+          style="background-image: url('img/slider.jpg')"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="text">
+                  <h1>
+                    We Provide <span>Medical</span> Services That You Can
+                    <span>Trust!</span>
+                  </h1>
+                  <p>
+                    Beiseker Pharmacy is the reputed place in the town which
+                    provides different medical services.
+                  </p>
+                  <div class="button">
+                    <a href="./appointment.php" class="btn">Get Appointment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Start End Slider -->
+        <!-- Start Single Slider -->
+        <div
+          class="single-slider"
+          style="background-image: url('img/slider3.jpg')"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="text">
+                  <h1>
+                    We Provide <span>Medical</span> Services That You Can
+                    <span>Trust!</span>
+                  </h1>
+                  <p>
+                    Beiseker Pharmacy contains flexible appointment types such
+                    as Online OR In-person appointment.
+                  </p>
+                  <div class="button">
+                    <a href="./appointment.php" class="btn">Get Appointment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Slider -->
+      </div>
+    </section>
+    <!--/ End Slider Area -->
+
+    <!-- Start Schedule Area -->
+
+    <!--/End Start schedule Area -->
+
+    <!-- Start Feautes -->
+    <section id="services" class="Feautes section">
+      <div class="container">
+        <h1>Services</h1>
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <!-- Start Single features -->
+            <div
+              class="single-features featuressingle"
+              data-description="At Beiseker Pharmacy, we make scheduling a doctor’s appointment easier than ever. Whether you prefer the convenience of a virtual consultation from the comfort of your home or an in-person visit at one of our clinics, our platform offers a streamlined process to connect you with the right healthcare provider for your needs."
+              data-title="Book Your Doctor Now"
+            >
+              <div class="signle-icon">
+                <i class="icofont icofont-ambulance-cross"></i>
+              </div>
+              <h3>Doctor Appointment</h3>
+              <p>
+                Book in-person or virtual consultations with a doctor. Fill out
+                our comprehensive form to streamline your appointment process
+              </p>
+            </div>
+            <!-- End Single features -->
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <!-- Start Single features -->
+            <div
+              class="single-features featuressingle"
+              data-description="If you're relocating or changing pharmacies, we make transferring your prescriptions easy and stress-free. Just provide your current pharmacy information, and we'll manage the process to ensure a smooth transition without disrupting your medication routine."
+              data-title="Prescription Refill & Delivery"
+            >
+              <div class="signle-icon">
+                <i class="icofont icofont-ambulance-cross"></i>
+              </div>
+              <h3>Prescription Refill/Renewal</h3>
+              <p>
+                Get your prescriptions delivered right to your doorstep with our
+                free delivery service. Easily transfer your prescriptions if
+                you're relocating.
+              </p>
+            </div>
+            <!-- End Single features -->
+          </div>
+          <div class="col-lg-4 col-12">
+            <!-- Start Single features -->
+            <div
+              class="single-features featuressingle"
+              data-description="Our service offers flexible scheduling for vaccination appointments, allowing you to choose a time that suits your busy routine at a local clinic or pharmacy, minimizing wait times. For international travelers, we provide consultations on necessary vaccines and preventive measures for your destination. Once booked, you'll receive confirmation and reminders via email or SMS, with easy options to reschedule if needed. Stay protected from preventable illnesses and safeguard your health—book your vaccination appointment today!"
+              data-title="Vaccination Appointment Services"
+            >
+              <div class="signle-icon">
+                <i class="icofont icofont-medical-sign-alt"></i>
+              </div>
+              <h3>Vaccination Appointment</h3>
+              <p>
+                Schedule appointments for flu, pneumonia vaccinations, clinic
+                visits, and travel consultations at your convenience.
+              </p>
+            </div>
+            <!-- End Single features -->
+          </div>
+          <div class="col-lg-4 col-12">
+            <!-- Start Single features -->
+            <div
+              class="single-features last featuressingle"
+              data-description="Discover relief from chronic migraines with our specialized Botox treatment, a clinically proven method for reducing the frequency and intensity of migraine symptoms. Administered by our experienced healthcare professionals, this treatment involves targeted injections that block pain signals in the brain. Many patients report significant improvement within just a few sessions, leading to fewer headache days and enhanced quality of life. Our team will work closely with you to develop a personalized treatment plan tailored to your specific needs, ensuring a comfortable and effective experience. Say goodbye to debilitating migraines—schedule your consultation today!"
+              data-title="Say Goodbye to Migraines with Botox Therapy"
+            >
+              <div class="signle-icon">
+                <i class="icofont icofont-stethoscope"></i>
+              </div>
+              <h3>Botox Treatment for Migraine</h3>
+              <p>
+                Experience a proven method for reducing migraine symptoms
+                through our Botox treatment specifically designed for migraine
+                sufferers.
+              </p>
+            </div>
+            <!-- End Single features -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ End Feautes -->
+    <div id="serviceModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+
+    <!-- Start Fun-facts -->
+    <!--/ End Fun-facts -->
+
+    <!-- Start Why choose -->
+    <section id="about-us" class="why-choose section">
+      <div class="container">
+        <div class="row aboutusrow" style="display: block">
+          <div class="col-lg-6 col-12" style="max-width: none">
+            <!-- Start Choose Left -->
+            <div class="choose-left">
+              <h3 class="bluecolor">About Us</h3>
+              <p>
+                Welcome to Beiseker Pharmacy, your trusted healthcare
+                destination committed to delivering exceptional medical
+                services. At Beiseker Pharmacy, we offer a variety of essential
+                health services including vaccinations to keep you protected,
+                free prescription delivery for your convenience, and
+                professional Botox treatments to enhance your well-being.
+                Additionally, our on-site physician services ensure that you
+                receive prompt and personalized medical care. Dedicated to your
+                health and wellness, Beiseker Pharmacy is here to provide
+                comprehensive support for all your healthcare needs.
+              </p>
+            </div>
+            <!-- End Choose Left -->
+          </div>
+          <section id="services" class="Feautes section servicesection">
+            <div class="container">
+              <h1>Our Staff</h1>
+              <div class="row">
+                <div class="col-lg-4 col-12">
+                  <!-- Start Single features -->
+                  <div
+                    class="single-features"
+                    data-description="At Beiseker Pharmacy, we make scheduling a doctor’s appointment easier than ever. Whether you prefer the convenience of a virtual consultation from the comfort of your home or an in-person visit at one of our clinics, our platform offers a streamlined process to connect you with the right healthcare provider for your needs."
+                    data-title="Book Your Doctor Now"
+                  >
+                    <div class="signle-icon">
+                      <i class="icofont icofont-ambulance-cross"></i>
+                    </div>
+                    <h3>Doctor Appointment</h3>
+                    <p>
+                      Book in-person or virtual consultations with a doctor.
+                      Fill out our comprehensive form to streamline your
+                      appointment process
+                    </p>
+                  </div>
+                  <!-- End Single features -->
+                </div>
+
+                <div class="col-lg-4 col-12">
+                  <!-- Start Single features -->
+                  <div
+                    class="single-features"
+                    data-description="If you're relocating or changing pharmacies, we make transferring your prescriptions easy and stress-free. Just provide your current pharmacy information, and we'll manage the process to ensure a smooth transition without disrupting your medication routine."
+                    data-title="Prescription Refill & Delivery"
+                  >
+                    <div class="signle-icon">
+                      <i class="icofont icofont-ambulance-cross"></i>
+                    </div>
+                    <h3>Prescription Refill/Renewal</h3>
+                    <p>
+                      Get your prescriptions delivered right to your doorstep
+                      with our free delivery service. Easily transfer your
+                      prescriptions if you're relocating.
+                    </p>
+                  </div>
+                  <!-- End Single features -->
+                </div>
+                <div class="col-lg-4 col-12">
+                  <!-- Start Single features -->
+                  <div
+                    class="single-features"
+                    data-description="Our service offers flexible scheduling for vaccination appointments, allowing you to choose a time that suits your busy routine at a local clinic or pharmacy, minimizing wait times. For international travelers, we provide consultations on necessary vaccines and preventive measures for your destination. Once booked, you'll receive confirmation and reminders via email or SMS, with easy options to reschedule if needed. Stay protected from preventable illnesses and safeguard your health—book your vaccination appointment today!"
+                    data-title="Vaccination Appointment Services"
+                  >
+                    <div class="signle-icon">
+                      <i class="icofont icofont-medical-sign-alt"></i>
+                    </div>
+                    <h3>Vaccination Appointment</h3>
+                    <p>
+                      Schedule appointments for flu, pneumonia vaccinations,
+                      clinic visits, and travel consultations at your
+                      convenience.
+                    </p>
+                  </div>
+                  <!-- End Single features -->
+                </div>
+                <div class="col-lg-4 col-12">
+                  <!-- Start Single features -->
+                  <div
+                    class="single-features last"
+                    data-description="Discover relief from chronic migraines with our specialized Botox treatment, a clinically proven method for reducing the frequency and intensity of migraine symptoms. Administered by our experienced healthcare professionals, this treatment involves targeted injections that block pain signals in the brain. Many patients report significant improvement within just a few sessions, leading to fewer headache days and enhanced quality of life. Our team will work closely with you to develop a personalized treatment plan tailored to your specific needs, ensuring a comfortable and effective experience. Say goodbye to debilitating migraines—schedule your consultation today!"
+                    data-title="Say Goodbye to Migraines with Botox Therapy"
+                  >
+                    <div class="signle-icon">
+                      <i class="icofont icofont-stethoscope"></i>
+                    </div>
+                    <h3>Botox Treatment for Migraine</h3>
+                    <p>
+                      Experience a proven method for reducing migraine symptoms
+                      through our Botox treatment specifically designed for
+                      migraine sufferers.
+                    </p>
+                  </div>
+                  <!-- End Single features -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="col-lg-6 col-12 aboutusimages" style="max-width: none">
+            <!-- Start Choose Rights -->
+            <div class="choose-right">
+              <div class="slider">
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img1.jpg" alt="Image 1" />
+                </div>
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img2.jpg" alt="Image 1" />
+                </div>
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img3.jpg" alt="Image 1" />
+                </div>
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img4.jpg" alt="Image 1" />
+                </div>
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img5.jpg" alt="Image 1" />
+                </div>
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img6.jpg" alt="Image 1" />
+                </div>
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img7.jpg" alt="Image 1" />
+                </div>
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img8.jpg" alt="Image 1" />
+                </div>
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img9.jpg" alt="Image 1" />
+                </div>
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img10.jpg" alt="Image 1" />
+                </div>
+                <div class="aboutimagesus">
+                  <img class="gandoImage" src="./img/img11.jpg" alt="Image 1" />
+                </div>
+                <!-- Add more images as needed -->
+              </div>
+            </div>
+
+            <!-- End Choose Rights -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ End Why choose -->
+
+    <!-- Start Call to action -->
+    <section
+      class="call-action overlay"
+      data-stellar-background-ratio="0.5"
+    ></section>
+    <!--/ End Call to action -->
+
+    <section class="sliderTesti" id="sliderTesti">
+      <h1 style="text-align: center; padding-bottom: 25px">Testimonials</h1>
+      <div id="owl-demo1" class="testimonials-carousel">
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="discretion-blog">
+              <h3>Jalpesh Bhuva</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>
+                The Pharmacy under New management. Great discount program for
+                prescription purchase. Great Customer service and Health care. I
+                would prefer this pharmacy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="discretion-blog">
+              <h3>Shanyn Silinski</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>
+                Always helpful, makes sure we get the information we need as
+                well as fast accurate refills. Very caring and knowledgeable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="discretion-blog">
+              <h3>Cara McColman</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>
+                Literally the most caring pharmacy in Canada. Hand-delivers our
+                medications, calls to remind us of renewals, updates us about
+                vaccinations and other health measures - AND they're kind and
+                friendly.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="discretion-blog">
+              <h3>Sam Arnold</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>
+                Drew and his staff are friendly, professional and knowledgeable.
+                Drew made sure I got everything I needed for my daughter and
+                make good suggestions to help her feel better.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="discretion-blog">
+              <h3>Darcy Wright</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>
+                Drew and his team are not only our pharmacist but they treat us
+                like family. Absolutely the best pharmacy going. The knowledge
+                of their pharmaceutical is above top notch. Highly recommend
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="allitem">
+          <div class="blog-allof">
+            <div class="discretion-blog">
+              <h3>Jipal Patel</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>
+                Excellent service with polite response and satisfied answers
+                regarding health issues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start footer -->
+
+    <div id="footerId"></div>
+
+    <!-- / End footer -->
+
+    <!-- script to popup success of form JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Create a Promise that resolves after a 2-second delay
+        new Promise((resolve) => {
+          setTimeout(() => {
+            resolve(); // Resolves the promise after 2 seconds
+          }, 1500);
+        }).then(() => {
+          // This code runs after the 2-second delay
+
+          // Check if the alert message is stored in localStorage
+          var message = localStorage.getItem("alertMessage");
+          var messageType = localStorage.getItem("alertMessageType");
+
+          if (message) {
+            // Display the alert based on the messageType
+            if (messageType === "success") {
+              alert("Success: " + message);
+            } else if (messageType === "error") {
+              alert("Error: " + message);
+            } else {
+              alert(message); // Fallback for any other message type
+            }
+
+            // Clear the stored message so it's not shown again
+            localStorage.removeItem("alertMessage");
+            localStorage.removeItem("alertMessageType");
+          }
+        });
+      });
+    </script>
+
+    <!-- jQuery (only include once, keep one version) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery Migrate (if needed for old jQuery plugins) -->
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+
+    <!-- Other necessary scripts in proper order -->
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/colors.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/slicknav.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/niceselect.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <!-- Owl Carousel for testimonial -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/steller.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Main JS (only include it once, assuming it holds general page-specific JS) -->
+    <script src="js/main.js"></script>
+
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footerId").innerHTML = data;
+        })
+        .catch((error) => console.error("Error fetching footer:", error));
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".choose-right .slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000, // Adjust autoplay speed as needed
+          dots: false, // Optional: Add dots navigation
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+              },
+            },
+            // Add more breakpoints if necessary
+          ],
+        });
+      });
+    </script>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("serviceModal");
+
+      // Ensure modal is hidden on page load
+      window.onload = function () {
+        modal.style.display = "none";
+      };
+
+      var modalTitle = document.getElementById("modalTitle");
+      var modalDescription = document.getElementById("modalDescription");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // Add click event listeners to each service
+      var services = document.querySelectorAll(".featuressingle");
+
+      services.forEach(function (service) {
+        service.addEventListener("click", function () {
+          var title = this.getAttribute("data-title");
+          var description = this.getAttribute("data-description");
+
+          modalTitle.innerText = title;
+          modalDescription.innerText = description;
+
+          modal.style.display = "flex";
+        });
+      });
+
+      // Close the modal when the user clicks on <span> (x)
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // Close the modal if the user clicks outside of it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <!-- <script>
 
     // Disable right-click context menu
     document.addEventListener('contextmenu', function (e) {
@@ -798,7 +976,5 @@
       }
     };
   </script> -->
-
-</body>
-
+  </body>
 </html>
